@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca Digital Pública</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #2d3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .libros-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .libro {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .libro img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .libro h2 {
+      margin: 10px 0 5px;
+    }
+
+    .libro .autor {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .libro .descripcion {
+      font-size: 0.9em;
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .libro a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #2d3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .libro a:hover {
+      background: #1c2938;
+    }
+
+    footer {
+      background: #2d3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biblioteca Digital Pública</h1>
+    <p>Lectura gratuita y legal de libros clásicos</p>
+  </header>
+
+  <main>
+    <section class="libros-grid">
+
+      <article class="libro">
+        <img src="libros/donquijote/portada.jpg" alt="Don Quijote">
+        <h2>Don Quijote de la Mancha</h2>
+        <p class="autor">Miguel de Cervantes</p>
+        <p class="descripcion">Una de las obras más influyentes de la literatura universal, que narra las aventuras del ingenioso hidalgo Don Quijote.</p>
+        <a href="libros/donquijote/libro.pdf" target="_blank">Leer PDF</a>
+      </article>
+
+      <article class="libro">
+        <img src="libros/orgulloyprejuicio/portada.jpg" alt="Orgullo y Prejuicio">
+        <h2>Orgullo y Prejuicio</h2>
+        <p class="autor">Jane Austen</p>
+        <p class="descripcion">Una obra maestra del romanticismo que retrata la vida, los prejuicios y la condición social en la Inglaterra del siglo XIX.</p>
+        <a href="libros/orgulloyprejuicio/libro.pdf" target="_blank">Leer PDF</a>
+      </article>
+
+      <article class="libro">
+        <img src="libros/frankenstein/portada.jpg" alt="Frankenstein">
+        <h2>Frankenstein</h2>
+        <p class="autor">Mary Shelley</p>
+        <p class="descripcion">La clásica historia del científico Victor Frankenstein y su criatura, símbolo de los límites del conocimiento humano.</p>
+        <a href="libros/frankenstein/libro.pdf" target="_blank">Leer PDF</a>
+      </article>
+
+      <article class="libro">
+        <img src="libros/artedelaguerra/portada.jpg" alt="El arte de la guerra">
+        <h2>El arte de la guerra</h2>
+        <p class="autor">Sun Tzu</p>
+        <p class="descripcion">Un antiguo tratado militar que sigue vigente en estrategia, liderazgo y negociación.</p>
+        <a href="libros/artedelaguerra/libro.pdf" target="_blank">Leer PDF</a>
+      </article>
+
+      <article class="libro">
+        <img src="libros/divinacomedia/portada.jpg" alt="La Divina Comedia">
+        <h2>La Divina Comedia</h2>
+        <p class="autor">Dante Alighieri</p>
+        <p class="descripcion">Una obra épica que narra el viaje de Dante por el Infierno, el Purgatorio y el Paraíso.</p>
+        <a href="libros/divinacomedia/libro.pdf" target="_blank">Leer PDF</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Todos los libros presentados son de dominio público.</p>
+  </footer>
+</body>
+</html>
